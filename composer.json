@@ -1,2 +1,33 @@
 {
+  "name": "hanterrian/php-lol",
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "Core\\": "core/",
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "hanterrian",
+      "email": "hanterrian@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "bayfrontmedia/php-array-helpers": "^2.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "symfony/var-dumper": "^6.2"
+  }
 }
